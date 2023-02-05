@@ -1,6 +1,6 @@
 // Schema derived from https://schema.org/Organization
-import { defineType } from 'sanity';
 import { verifyOrganisationNumber } from 'norwegian-numbers';
+import { defineType } from 'sanity';
 
 export default defineType({
   name: 'organization',
