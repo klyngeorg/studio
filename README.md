@@ -60,4 +60,5 @@ image).
 
 With a `Member` created, we only have stored the information, but we haven't
 added a _membership_ to it. To add a membership, go to _Medlemskap_ and click
-the add button where you'll refer the member you recently created.
+the add button where you'll refer the member you recently created. You should
+leave the status field as the default value (_Venter_).
