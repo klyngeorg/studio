@@ -39,9 +39,7 @@ export default defineType({
       name: 'image',
       type: 'image',
       title: 'Bilde',
-      options: {
-        hotspot: true,
-      }
+      options: { hotspot: true },
     },
     {
       name: 'privacy',
