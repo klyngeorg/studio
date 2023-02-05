@@ -54,6 +54,7 @@ export default defineType({
           { title: 'Venter på betaling', value: 'pending-payment' },
           { title: 'Aktiv', value: 'active' },
           { title: 'Utskrevet', value: 'expelled' },
+          { title: 'Venter på utskrivning', value: 'pending-expelled' },
         ],
       },
       initialValue: 'pending',

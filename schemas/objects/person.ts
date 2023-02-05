@@ -39,6 +39,9 @@ export default defineType({
       name: 'image',
       type: 'image',
       title: 'Bilde',
+      options: {
+        hotspot: true,
+      }
     },
     {
       name: 'privacy',
@@ -51,38 +54,7 @@ export default defineType({
       type: 'array',
       title: 'Jobber for',
       description: 'Første selskapet i listen er hovedselskapet',
-      of: [
-        {
-          type: 'object',
-          name: 'worksFor',
-          preview: {
-            select: {
-              role: 'name',
-              organization: 'worksFor.name',
-            },
-            prepare({ role, organization }) {
-              return {
-                title: organization,
-                subtitle: role,
-              };
-            },
-          },
-          fields: [
-            {
-              name: 'name',
-              type: 'string',
-              title: 'Rolle',
-              validation: Rule => Rule.required(),
-            },
-            {
-              name: 'worksFor',
-              type: 'reference',
-              title: 'Selskap',
-              to: [{ type: 'organization' }],
-            },
-          ],
-        },
-      ],
+      of: [{ type: 'works-for' }],
     },
   ],
 });

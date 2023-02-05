@@ -28,19 +28,12 @@ export default defineType({
     },
     // Section for payment details
     {
-      name: 'payment',
-      type: 'object',
-      title: 'Betaling',
-      fields: [
-        {
-          name: 'payee',
-          type: 'reference',
-          title: 'Mottaker',
-          description:
-            'Navn på mottaker av faktura. Dersom ikke valgt, blir faktura sendt til medlemmet direkte',
-          to: [{ type: 'organization' }],
-        },
-      ],
-    }
+      name: 'payee',
+      type: 'reference',
+      title: 'Mottaker',
+      description:
+        'Navn på mottaker av faktura. Dersom ikke valgt, blir faktura sendt til medlemmet direkte',
+      to: [{ type: 'organization' }],
+    },
   ],
 });
