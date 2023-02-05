@@ -1,0 +1,46 @@
+import { defineType } from 'sanity';
+
+export default defineType({
+  name: 'member',
+  type: 'document',
+  title: 'Medlem',
+  preview: {
+    select: {
+      givenName: 'person.givenName',
+      familyName: 'person.familyName',
+      company: 'person.worksFor.0.worksFor.name',
+      role: 'person.worksFor.0.name',
+      media: 'person.image',
+    },
+    prepare({ givenName, familyName, company, media, role }) {
+      return {
+        title: `${givenName} ${familyName}`,
+        subtitle: `${role} @ ${company}`,
+        media,
+      };
+    },
+  },
+  fields: [
+    {
+      name: 'person',
+      type: 'person',
+      title: 'Person',
+    },
+    // Section for payment details
+    {
+      name: 'payment',
+      type: 'object',
+      title: 'Betaling',
+      fields: [
+        {
+          name: 'payee',
+          type: 'reference',
+          title: 'Mottaker',
+          description:
+            'Navn på mottaker av faktura. Dersom ikke valgt, blir faktura sendt til medlemmet direkte',
+          to: [{ type: 'organization' }],
+        },
+      ],
+    }
+  ],
+});

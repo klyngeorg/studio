@@ -1,0 +1,6 @@
+{
+  "extends": ["@bjerk/eslint-config", "@sanity/eslint-config-studio"],
+  "rules": {
+    "import/no-default-export": "off"
+  }
+}
