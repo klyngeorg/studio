@@ -62,3 +62,10 @@ With a `Member` created, we only have stored the information, but we haven't
 added a _membership_ to it. To add a membership, go to _Medlemskap_ and click
 the add button where you'll refer the member you recently created. You should
 leave the status field as the default value (_Venter_).
+
+## Other links
+
+GraphQL is available here:
+https://95rc74zt.api.sanity.io/v1/graphql/production/default
+
+**Note**: You will need an API token to access data.
