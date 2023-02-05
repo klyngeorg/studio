@@ -1,8 +1,10 @@
+import { HiUserCircle } from 'react-icons/hi2';
 import { defineType } from 'sanity';
 
 export default defineType({
   name: 'member',
   type: 'document',
+  icon: HiUserCircle,
   title: 'Medlem',
   preview: {
     select: {

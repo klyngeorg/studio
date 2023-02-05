@@ -1,11 +1,14 @@
-// Schema derived from https://schema.org/Organization
 import { verifyOrganisationNumber } from 'norwegian-numbers';
+import { HiBuildingOffice } from 'react-icons/hi2';
 import { defineType } from 'sanity';
+
+// Schema derived from https://schema.org/Organization
 
 export default defineType({
   name: 'organization',
   type: 'document',
   title: 'Organisasjon',
+  icon: HiBuildingOffice,
   fields: [
     {
       name: 'name',

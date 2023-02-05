@@ -1,9 +1,28 @@
-import { defineType } from 'sanity';
+import { HiIdentification } from 'react-icons/hi2';
+import { InitialValueResolver, defineType } from 'sanity';
+
+const getCurrentYearRef: InitialValueResolver<
+  never,
+  { _type: string; _ref: string }
+> = async (_, { getClient }) => {
+  const year = new Date().getFullYear();
+  const client = getClient({ apiVersion: '2021-03-25' });
+  const currentMembershipYear = await client.fetch(
+    `*[_type == "membershipYear" && year == ${year}]`,
+  );
+
+  return {
+    // Required _type to tell the schema what fields to map
+    _type: 'membershipYear',
+    _ref: currentMembershipYear[0]._id,
+  };
+};
 
 export default defineType({
   name: 'membership',
   type: 'document',
   title: 'Medlemskap',
+  icon: HiIdentification,
   preview: {
     select: {
       givenName: 'member.person.givenName',
@@ -35,13 +54,9 @@ export default defineType({
     {
       name: 'year',
       type: 'reference',
-      to: [{ type: 'membership-year' }],
+      to: [{ type: 'membershipYear' }],
       validation: Rule => Rule.required(),
-      // Default to current year
-      initialValue: {
-        // Required _type to tell the schema what fields to map
-        _ref: '93015e4a-7250-4155-b78a-ea4b7ab13bb9',
-      },
+      initialValue: getCurrentYearRef,
     },
     {
       name: 'status',
