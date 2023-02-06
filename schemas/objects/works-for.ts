@@ -1,5 +1,7 @@
 import { defineType } from 'sanity';
 
+// Derived from https://schema.org/worksFor
+
 export default defineType({
   name: 'works-for',
   type: 'object',

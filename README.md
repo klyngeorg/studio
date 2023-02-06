@@ -38,6 +38,29 @@ describe which organization should be invoiced for the membership.
 A `Membership` describes if a `Member` has membership within a `MembershipYear`.
 Where `MembershipYear` typically describes a year of membership.
 
+## Basing data models of Schema.org
+
+To promote standardization and normalization we build our schemas based on
+[Schema.org][schema]. We are not fully implementing the schemas, but picking the
+fields we need and in some cases adding new fields. One example is storing
+information about privacy close to the data it concerns.
+
+We are trying to closely comply with Schema.org schemas, we also benefit of
+using these schemas when using [structured data][structured-data] in web
+applications and the like. There's also a higher level of descriptions of our
+data.
+
+- `Person` is derived from [schema.org/Person](https://schema.org/Person)
+- `Organization` is derived from
+  [schema.org/Organization](https://schema.org/Organization)
+- `Address` is derived from
+  [schema.org/PostalAddress](https://schema.org/PostalAddress)
+- `worksFor` is derived from [schema.org/worksFor](https://schema.org/worksFor)
+
+[schema]: https://schema.org/
+[structured-data]:
+  https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
 ## Add new members
 
 https://user-images.githubusercontent.com/3726815/216833303-7bf8812f-25df-4f39-9a68-2694419f7b6d.mov
