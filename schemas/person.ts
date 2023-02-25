@@ -1,10 +1,27 @@
+import { HiUserCircle } from 'react-icons/hi2';
 import { defineType } from 'sanity';
 
-// Fields derived from https://schema.org/Person
 export default defineType({
-  name: 'person-legacy',
-  type: 'object',
+  name: 'person',
+  type: 'document',
+  icon: HiUserCircle,
   title: 'Person',
+  preview: {
+    select: {
+      givenName: 'givenName',
+      familyName: 'familyName',
+      company: 'worksFor.0.worksFor.name',
+      role: 'worksFor.0.name',
+      media: 'image',
+    },
+    prepare({ givenName, familyName, company, media, role }) {
+      return {
+        title: `${givenName} ${familyName}`,
+        subtitle: `${role} @ ${company}`,
+        media,
+      };
+    },
+  },
   fields: [
     {
       name: 'givenName',

@@ -5,7 +5,7 @@ export default defineType({
   name: 'member',
   type: 'document',
   icon: HiUserCircle,
-  title: 'Medlem',
+  title: 'Medlem (legacy)',
   preview: {
     select: {
       givenName: 'person.givenName',

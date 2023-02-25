@@ -70,6 +70,12 @@ export default defineType({
       name: 'offer',
       type: 'offer',
     },
+    {
+      name: 'performer',
+      title: 'Innleggsholder',
+      type: 'reference',
+      to: [{ type: 'person' }],
+    },
   ],
   initialValue: {
     eventAttendanceMode: 'OfflineEventAttendanceMode',

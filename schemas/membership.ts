@@ -25,8 +25,8 @@ export default defineType({
   icon: HiIdentification,
   preview: {
     select: {
-      givenName: 'member.person.givenName',
-      familyName: 'member.person.familyName',
+      givenName: 'member.givenName',
+      familyName: 'member.familyName',
       year: 'year.year',
       status: 'status',
     },
@@ -78,8 +78,16 @@ export default defineType({
     {
       name: 'member',
       type: 'reference',
-      to: [{ type: 'member' }],
+      to: [{ type: 'person' }],
       validation: Rule => Rule.required(),
+    },
+    {
+      name: 'payee',
+      type: 'reference',
+      title: 'Mottaker',
+      description:
+        'Navn på mottaker av faktura. Dersom ikke valgt, blir faktura sendt til medlemmet direkte',
+      to: [{ type: 'organization' }, { type: 'person' }],
     },
   ],
 });
