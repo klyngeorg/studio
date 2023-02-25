@@ -1,13 +1,13 @@
-import event from './event.js';
-import membershipYear from './membership-year.js';
-import membership from './membership.js';
-import address from './objects/address.js';
-import offer from './objects/offer.js';
-import personLegacy from './objects/person.js';
-import privacyOptions from './objects/privacy-options.js';
-import worksFor from './objects/works-for.js';
-import organization from './organization.js';
-import person from './person.js';
+import event from './event';
+import membershipYear from './membership-year';
+import membership from './membership';
+import address from './objects/address';
+import offer from './objects/offer';
+import personLegacy from './objects/person';
+import privacyOptions from './objects/privacy-options';
+import worksFor from './objects/works-for';
+import organization from './organization';
+import person from './person';
 
 export const schemaTypes = [
   offer,
