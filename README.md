@@ -1,7 +1,5 @@
 # Klynge Næringsforening – Membership and Organization setup
 
-https://youtu.be/h17l6JM3q-E
-
 This repository contains [Klynge Næringsforening's _Sanity Studio_][studio]. In
 this tool, we manage all memberships, including personal data such as name,
 address, privacy options, membership status and organizations associated with
@@ -62,6 +60,9 @@ data.
 
 
 https://user-images.githubusercontent.com/3726815/221369151-fbd42b5b-a392-41e2-ae49-8d5298fe9f05.mp4
+
+There's also a video guide that can be seen here (in Norwegian):
+https://youtu.be/h17l6JM3q-E
 
 **Prerequisite**: You'll need to have access to [studio], it's safe to assume
 [someone with a board member role at Klynge][members] to have access and be able
