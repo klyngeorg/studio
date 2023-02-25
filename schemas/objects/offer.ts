@@ -9,6 +9,13 @@ export default defineType({
     'Tilbud i denne sammenheng er eksempelvis kostnad for påmelding, kursavgift, etc.',
   fields: [
     {
+      name: 'description',
+      type: 'text',
+      title: 'Beskrivelse',
+      description:
+        'For å forklare hva tilbudet er. Eksempelvis, at det er kursavgift eller mat',
+    },
+    {
       name: 'price',
       type: 'number',
       title: 'Pris',
@@ -45,7 +52,10 @@ export default defineType({
           { title: 'Ikke på lager', value: 'OutOfStock' },
           { title: 'Forhåndsbestilling', value: 'PreOrder' },
           { title: 'Utsolgt / Fullt', value: 'SoldOut' },
-          { title: 'Begrenset / Begrensede plasser', value: 'LimitedAvailability' },
+          {
+            title: 'Begrenset / Begrensede plasser',
+            value: 'LimitedAvailability',
+          },
         ],
       },
     },
