@@ -60,7 +60,8 @@ data.
 
 ## Add new members
 
-https://user-images.githubusercontent.com/3726815/216833303-7bf8812f-25df-4f39-9a68-2694419f7b6d.mov
+
+https://user-images.githubusercontent.com/3726815/221369151-fbd42b5b-a392-41e2-ae49-8d5298fe9f05.mp4
 
 **Prerequisite**: You'll need to have access to [studio], it's safe to assume
 [someone with a board member role at Klynge][members] to have access and be able
