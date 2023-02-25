@@ -69,7 +69,7 @@ export default defineType({
       title: 'Tilbud',
       name: 'offers',
       type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'offer' }] }],
+      of: [{ type: 'offer' }],
     },
     {
       name: 'performers',
