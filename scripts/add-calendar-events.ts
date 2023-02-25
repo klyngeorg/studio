@@ -29,7 +29,7 @@ interface SanityEvent {
     | 'OnlineEventAttendanceMode'
     | 'MixedEventAttendanceMode';
   image?: SanityImageAssetDocument;
-  offers: SanityOffer[];
+  offers?: SanityOffer[];
 }
 
 type WithId<T> = T & { _id: string };
@@ -115,10 +115,6 @@ async function addCalendarEvents() {
         name: event.summary,
         date: event.start.dateTime,
         eventAttendanceMode: 'OfflineEventAttendanceMode',
-        offers: [{
-          priceCurrency: 'NOK',
-          availability: 'InStock',
-        }],
       });
     }
   }
