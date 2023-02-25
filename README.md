@@ -55,7 +55,7 @@ data.
 [schema]: https://schema.org/
 [structured-data]:
   https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
-  
+
 ## Managing events
 
 There's a video guiding through how this is managed (in Norwegian):
@@ -64,7 +64,6 @@ https://youtu.be/h17l6JM3q-E
 ## Add new members
 
 https://user-images.githubusercontent.com/3726815/221369151-fbd42b5b-a392-41e2-ae49-8d5298fe9f05.mp4
-
 
 **Prerequisite**: You'll need to have access to [studio], it's safe to assume
 [someone with a board member role at Klynge][members] to have access and be able
@@ -86,6 +85,12 @@ With a `Person` created, we can add a membership to that person. To add a
 membership, go to _Medlemskap_ and click the add button where you'll refer the
 member you recently created. You should leave the status field as the default
 value (_Venter_).
+
+There's also a [video guide about how to add a new member][video-guide-no] along
+with some general descriptions of the different document types. The video is
+in Norwegian.
+
+[video-guide-no]: https://youtu.be/CucEfuBR5x8
 
 ## Other links
 
