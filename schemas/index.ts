@@ -1,5 +1,4 @@
 import event from './event.js';
-import member from './member.js';
 import membershipYear from './membership-year.js';
 import membership from './membership.js';
 import address from './objects/address.js';
@@ -13,7 +12,6 @@ import person from './person.js';
 export const schemaTypes = [
   offer,
   event,
-  member,
   address,
   personLegacy,
   person,
