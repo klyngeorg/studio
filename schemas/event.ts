@@ -41,7 +41,7 @@ export default defineType({
     {
       title: 'Dato',
       name: 'date',
-      type: 'date',
+      type: 'datetime',
       readOnly: true,
     },
     {
