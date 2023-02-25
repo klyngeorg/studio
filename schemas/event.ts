@@ -71,10 +71,10 @@ export default defineType({
       type: 'offer',
     },
     {
-      name: 'performer',
-      title: 'Innleggsholder',
-      type: 'reference',
-      to: [{ type: 'person' }],
+      name: 'performers',
+      title: 'Innleggsholdere',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'person' }] }],
     },
   ],
   initialValue: {
