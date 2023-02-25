@@ -1,4 +1,4 @@
-# Klynge Næringsforening – Membership and Organization setup
+![studio](https://user-images.githubusercontent.com/3726815/221369558-80be490b-9195-42b6-80c5-4b8555e394e5.svg)
 
 This repository contains [Klynge Næringsforening's _Sanity Studio_][studio]. In
 this tool, we manage all memberships, including personal data such as name,
