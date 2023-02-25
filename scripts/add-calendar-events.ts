@@ -6,6 +6,7 @@ import { config } from '../config.js';
 import sanityConfig from '../sanity.cli.js';
 
 interface SanityOffer {
+  description?: string;
   price?: number;
   priceCurrency: 'NOK' | 'EUR' | 'USD';
   url?: string;
@@ -28,7 +29,7 @@ interface SanityEvent {
     | 'OnlineEventAttendanceMode'
     | 'MixedEventAttendanceMode';
   image?: SanityImageAssetDocument;
-  offer: SanityOffer;
+  offers: SanityOffer[];
 }
 
 type WithId<T> = T & { _id: string };
@@ -114,10 +115,10 @@ async function addCalendarEvents() {
         name: event.summary,
         date: event.start.dateTime,
         eventAttendanceMode: 'OfflineEventAttendanceMode',
-        offer: {
+        offers: [{
           priceCurrency: 'NOK',
           availability: 'InStock',
-        },
+        }],
       });
     }
   }
