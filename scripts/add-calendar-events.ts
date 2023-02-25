@@ -34,7 +34,10 @@ interface SanityEvent {
 
 type WithId<T> = T & { _id: string };
 
-function compareEvents(sanityEvent: SanityEvent, calendarEvent: google.calendar_v3.Schema$Event) {
+function compareEvents(
+  sanityEvent: SanityEvent,
+  calendarEvent: google.calendar_v3.Schema$Event,
+) {
   if (sanityEvent.date !== calendarEvent.start?.dateTime) {
     return false;
   }
