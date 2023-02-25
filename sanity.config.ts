@@ -1,8 +1,8 @@
 import { visionTool } from '@sanity/vision';
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
-import { Logo } from './components/logo';
-import { schemaTypes } from './schemas';
+import { Logo } from './components/logo.js';
+import { schemaTypes } from './schemas/index.js';
 
 export default defineConfig({
   name: 'default',
