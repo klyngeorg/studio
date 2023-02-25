@@ -35,3 +35,5 @@ jobs:
 
       - name: Synchronize calendar events 📅
         run: pnpm add-calendar-events
+        env:
+          SANITY_TOKEN: ${{ secrets.SANITY_TOKEN }}
