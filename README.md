@@ -55,14 +55,16 @@ data.
 [schema]: https://schema.org/
 [structured-data]:
   https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+  
+## Managing events
+
+There's a video guiding through how this is managed (in Norwegian):
+https://youtu.be/h17l6JM3q-E
 
 ## Add new members
 
-
 https://user-images.githubusercontent.com/3726815/221369151-fbd42b5b-a392-41e2-ae49-8d5298fe9f05.mp4
 
-There's also a video guide that can be seen here (in Norwegian):
-https://youtu.be/h17l6JM3q-E
 
 **Prerequisite**: You'll need to have access to [studio], it's safe to assume
 [someone with a board member role at Klynge][members] to have access and be able
