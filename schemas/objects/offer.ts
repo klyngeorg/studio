@@ -62,5 +62,6 @@ export default defineType({
   ],
   initialValue: {
     priceCurrency: 'NOK',
+    availability: 'InStock',
   },
 });
