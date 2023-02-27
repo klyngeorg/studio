@@ -7,6 +7,19 @@ export default defineType({
   title: 'Tilbud',
   description:
     'Tilbud i denne sammenheng er eksempelvis kostnad for påmelding, kursavgift, etc.',
+  preview: {
+    select: {
+      title: 'description',
+      price: 'price',
+      currency: 'priceCurrency',
+    },
+    prepare({ title, price, currency }) {
+      return {
+        title: title,
+        subtitle: `${price} ${currency}`,
+      };
+    },
+  },
   fields: [
     {
       name: 'description',
