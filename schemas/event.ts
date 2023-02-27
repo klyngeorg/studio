@@ -6,6 +6,11 @@ export default defineType({
   name: 'event',
   type: 'document',
   icon: HiCalendar,
+  description: [
+    'Arrangementer opprettes i felles kalender, og synkroniseres til Sanity.',
+    'Opplysninger som ikke kan legges inn i Google Calender legges derfor inn',
+    'her.',
+  ].join(' '),
   preview: {
     select: {
       title: 'name',
@@ -37,6 +42,11 @@ export default defineType({
       name: 'name',
       type: 'string',
       readOnly: true,
+      description: [
+        'Arrangementer opprettes i felles kalender, og synkroniseres til Sanity.',
+        'Opplysninger som navn, beskrivelse, sted og tidspunkter legges derfor inn der',
+        'Dersom du ønsker å endre noe av dette, må du endre det i kalenderen.',
+      ].join(' '),
     },
     {
       title: 'Dato',
