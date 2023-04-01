@@ -93,7 +93,7 @@ async function addCalendarEvents() {
     );
 
     if (sanityEvent) {
-      if (compareEvents(sanityEvent, event)) {
+      if (!compareEvents(sanityEvent, event)) {
         await sanityClient.patch(sanityEvent._id).set({
           date: event.start?.dateTime,
           name: event.summary,
