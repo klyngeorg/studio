@@ -94,10 +94,11 @@ async function addCalendarEvents() {
 
     if (sanityEvent) {
       if (!compareEvents(sanityEvent, event)) {
+        console.log('Updating event', sanityEvent._id);
         await sanityClient.patch(sanityEvent._id).set({
           date: event.start?.dateTime,
           name: event.summary,
-        });
+        }).commit();
       }
 
       continue;
