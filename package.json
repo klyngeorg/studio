@@ -9,10 +9,6 @@
     "node": ">=18"
   },
   "packageManager": "pnpm@8.3.0",
-  "volta": {
-    "node": "18.12.0",
-    "pnpm": "8.3.0"
-  },
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
