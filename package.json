@@ -24,7 +24,7 @@
     "sanity"
   ],
   "dependencies": {
-    "@googleapis/calendar": "^3.0.0",
+    "@googleapis/calendar": "^6.0.0",
     "@sanity/client": "^5.2.2",
     "@sanity/vision": "^3.0.0",
     "date-fns": "^2.29.3",
