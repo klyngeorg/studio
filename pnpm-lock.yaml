@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@googleapis/calendar':
-    specifier: ^3.0.0
-    version: 3.0.0
+    specifier: ^6.0.0
+    version: 6.0.0
   '@sanity/client':
     specifier: ^5.2.2
     version: 5.2.2
@@ -1741,8 +1741,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@googleapis/calendar@3.0.0:
-    resolution: {integrity: sha512-seYirlYY94OgTdwsIR7Ig7BdOQAqjOoVnWaxYMy63HpC61vTzxhlhfQWIVvwPH6yMaeztXLndsJZJK9Gxm4WSQ==}
+  /@googleapis/calendar@6.0.0:
+    resolution: {integrity: sha512-jjAw2td2nakra74gwQD7rygdKQc0tj3+c8+9eDg5U0GWDfhZOnw9Ubg0MGkwHsJ2WfkNgnXezJ7ExRJXKEAw2g==}
     engines: {node: '>=12.0.0'}
     dependencies:
       googleapis-common: 6.0.4
