@@ -1,6 +1,6 @@
 import event from './event';
-import membershipYear from './membership-year';
 import membership from './membership';
+import membershipYear from './membership-year';
 import address from './objects/address';
 import offer from './objects/offer';
 import personLegacy from './objects/person';
