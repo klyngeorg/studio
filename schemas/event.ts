@@ -1,3 +1,4 @@
+import { format } from 'date-fns';
 import { HiCalendar } from 'react-icons/hi2';
 import { defineType } from 'sanity';
 
@@ -53,6 +54,20 @@ export default defineType({
       name: 'date',
       type: 'datetime',
       readOnly: true,
+    },
+    {
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      description: 'VIKTIG: For å lage underside, må det legges inn en slug.',
+      options: {
+        source: document => [
+          document.date ? format(new Date(document.date as string), 'yyyy-MM-dd') : '',
+          document.name,
+        ].join('-'),
+        maxLength: 96,
+        unique: true,
+      },
     },
     {
       name: 'eventAttendanceMode',

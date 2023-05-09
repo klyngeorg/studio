@@ -30,6 +30,9 @@ interface SanityEvent {
     | 'MixedEventAttendanceMode';
   image?: SanityImageAssetDocument;
   offers?: SanityOffer[];
+  slug?: {
+    current: string;
+  };
 }
 
 type WithId<T> = T & { _id: string };
@@ -95,10 +98,13 @@ async function addCalendarEvents() {
     if (sanityEvent) {
       if (!compareEvents(sanityEvent, event)) {
         console.log('Updating event', sanityEvent._id);
-        await sanityClient.patch(sanityEvent._id).set({
-          date: event.start?.dateTime,
-          name: event.summary,
-        }).commit();
+        await sanityClient
+          .patch(sanityEvent._id)
+          .set({
+            date: event.start?.dateTime,
+            name: event.summary,
+          })
+          .commit();
       }
 
       continue;
