@@ -22,3 +22,5 @@
 
 # Typescript
 *.tsbuildinfo
+
+pnpm-lock.yaml

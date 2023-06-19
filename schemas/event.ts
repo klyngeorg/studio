@@ -20,14 +20,14 @@ export default defineType({
   },
   orderings: [
     {
-      title: 'Dato, nyeste først',
+      title: 'Dato, neste først',
       name: 'dateDesc',
-      by: [{ field: 'date', direction: 'desc' }],
+      by: [{ field: 'date', direction: 'asc' }],
     },
     {
-      title: 'Dato, eldste først',
+      title: 'Dato, siste først',
       name: 'dateAsc',
-      by: [{ field: 'date', direction: 'asc' }],
+      by: [{ field: 'date', direction: 'desc' }],
     },
   ],
   fields: [
@@ -61,10 +61,13 @@ export default defineType({
       type: 'slug',
       description: 'VIKTIG: For å lage underside, må det legges inn en slug.',
       options: {
-        source: document => [
-          document.date ? format(new Date(document.date as string), 'yyyy-MM-dd') : '',
-          document.name,
-        ].join('-'),
+        source: document =>
+          [
+            document.date
+              ? format(new Date(document.date as string), 'yyyy-MM-dd')
+              : '',
+            document.name,
+          ].join('-'),
         maxLength: 96,
         unique: true,
       },

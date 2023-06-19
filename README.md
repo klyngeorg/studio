@@ -87,8 +87,8 @@ member you recently created. You should leave the status field as the default
 value (_Venter_).
 
 There's also a [video guide about how to add a new member][video-guide-no] along
-with some general descriptions of the different document types. The video is
-in Norwegian.
+with some general descriptions of the different document types. The video is in
+Norwegian.
 
 [video-guide-no]: https://youtu.be/CucEfuBR5x8
 
