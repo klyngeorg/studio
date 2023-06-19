@@ -25,7 +25,7 @@
   ],
   "dependencies": {
     "@googleapis/calendar": "^6.0.0",
-    "@sanity/client": "^5.2.2",
+    "@sanity/client": "^6.0.0",
     "@sanity/vision": "^3.0.0",
     "date-fns": "^2.29.3",
     "norwegian-numbers": "^1.0.9",
