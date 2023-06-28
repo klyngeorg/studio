@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@googleapis/calendar':
-    specifier: ^6.0.0
-    version: 6.0.0
+    specifier: ^7.0.0
+    version: 7.0.0
   '@sanity/client':
     specifier: ^6.0.0
     version: 6.0.0
@@ -1956,8 +1956,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@googleapis/calendar@6.0.0:
-    resolution: {integrity: sha512-jjAw2td2nakra74gwQD7rygdKQc0tj3+c8+9eDg5U0GWDfhZOnw9Ubg0MGkwHsJ2WfkNgnXezJ7ExRJXKEAw2g==}
+  /@googleapis/calendar@7.0.0:
+    resolution: {integrity: sha512-KcpSxlZHrhPtwrDc4TzsVOhkjHxnixp1OlSNNFyYF44hQNMIQe6bs5tul4WtE0XQCmTxhayp+uZT7wBHwAtU/w==}
     engines: {node: '>=12.0.0'}
     dependencies:
       googleapis-common: 6.0.4
