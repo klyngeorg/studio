@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@googleapis/calendar':
-    specifier: ^6.0.0
-    version: 6.0.0
+    specifier: ^9.0.0
+    version: 9.0.0
   '@sanity/client':
     specifier: ^6.0.0
     version: 6.0.0
@@ -2207,8 +2207,8 @@ packages:
     resolution: {integrity: sha512-m0G6wlnhm/AX0H12IOWtK8gASEMffnX08RtKkCgTdHb9JpHKGloI7icFfLg9ZmQeavcvR0PKmzxClyuFPSjKWw==}
     dev: false
 
-  /@googleapis/calendar@6.0.0:
-    resolution: {integrity: sha512-jjAw2td2nakra74gwQD7rygdKQc0tj3+c8+9eDg5U0GWDfhZOnw9Ubg0MGkwHsJ2WfkNgnXezJ7ExRJXKEAw2g==}
+  /@googleapis/calendar@9.0.0:
+    resolution: {integrity: sha512-N7j9BA48mKqfO+XGjJcaxOCBSZ2sAbnGsHyt7qRaZnbbleMi0GUM7xab0nmvRcCS1npsUmOVh+xiAK44lyVPvA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       googleapis-common: 6.0.4
@@ -4172,7 +4172,7 @@ packages:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.12.1
-      resolve: 1.22.3
+      resolve: 1.22.2
     transitivePeerDependencies:
       - supports-color
     dev: true
