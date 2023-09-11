@@ -17,6 +17,9 @@ dependencies:
   date-fns:
     specifier: ^2.29.3
     version: 2.29.3
+  groqd-playground:
+    specifier: ^0.0.17
+    version: 0.0.17(@sanity/icons@2.4.1)(@sanity/ui@1.7.4)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(sanity@3.8.3)(styled-components@5.2.0)
   norwegian-numbers:
     specifier: ^1.0.9
     version: 1.0.9
@@ -3073,6 +3076,16 @@ packages:
       - '@codemirror/search'
     dev: false
 
+  /@uiw/react-split@5.9.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-sWCsP895jRQvLqHEJfpw4i7+zfjGw4Wuy1Oj6YcBBX5OJIomubBhp/TViIrcd8XMw5mdORYFAnA3ipsGti1xhw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@vitejs/plugin-react@3.1.0(vite@4.4.7):
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -4975,6 +4988,37 @@ packages:
     resolution: {integrity: sha512-qJeuEgziddryH1ClsJvMoZM9aXNQbBViNZZrJwhHKr2wU8HGGM7uNWNVFglWXMX60MMaa2SClX3UohP76Ut68g==}
     dev: false
 
+  /groqd-playground@0.0.17(@sanity/icons@2.4.1)(@sanity/ui@1.7.4)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(sanity@3.8.3)(styled-components@5.2.0):
+    resolution: {integrity: sha512-+a4TBIs06yrUW2OqLzF5OIrUieiM0PzTNmF+djZFRGt1S2DaTziZ1gBhelKZWl6xaOjv7dqjIb+ZVVgVOD49sA==}
+    peerDependencies:
+      '@sanity/icons': ^2.3.1
+      '@sanity/ui': ^1.3.2
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      react-is: ^18.2.0
+      sanity: ^3.0.0
+      styled-components: ^5.3.9
+    dependencies:
+      '@sanity/icons': 2.4.1(react@18.2.0)
+      '@sanity/ui': 1.7.4(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@5.2.0)
+      '@uiw/react-split': 5.9.0(react-dom@18.2.0)(react@18.2.0)
+      groqd: 0.15.9
+      lodash.has: 4.5.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-is: 18.2.0
+      sanity: 3.8.3(@types/node@20.4.5)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.2.0)
+      styled-components: 5.2.0(@babel/core@7.22.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
+      zod: 3.22.2
+    dev: false
+
+  /groqd@0.15.9:
+    resolution: {integrity: sha512-kpAt7hRa8NO7+icWvLaT7Mraxh7bJp8d64Z49ae949FTBR7zd/IaVAlIpZkjuD1IA5P0vEw3a8ZUuarCwUEl1Q==}
+    engines: {node: '>= 14'}
+    dependencies:
+      zod: 3.21.4
+    dev: false
+
   /gtoken@6.1.2:
     resolution: {integrity: sha512-4ccGpzz7YAr7lxrT2neugmXQ3hP9ho2gcaityLVkiUecAiwiy60Ii8gRbZeOsXV19fYaRjgBSshs8kXw+NKCPQ==}
     engines: {node: '>=12.0.0'}
@@ -5590,6 +5634,10 @@ packages:
 
   /lodash.flatten@4.4.0:
     resolution: {integrity: sha512-C5N2Z3DgnnKr0LOpv/hKCgKdb7ZZwafIrsesve6lmzvZIRZRGaZ/l6Q8+2W7NaT+ZwO3fFlSCzCzrDCFdJfZ4g==}
+    dev: false
+
+  /lodash.has@4.5.2:
+    resolution: {integrity: sha512-rnYUdIo6xRCJnQmbVFEwcxF144erlD+M3YcJUVesflU9paQaE8p+fJDcIQrlMYbxoANFL+AB9hZrzSBBk5PL+g==}
     dev: false
 
   /lodash.isplainobject@4.0.6:
@@ -7687,4 +7735,12 @@ packages:
       archiver-utils: 2.1.0
       compress-commons: 4.1.1
       readable-stream: 3.6.2
+    dev: false
+
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
+
+  /zod@3.22.2:
+    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
     dev: false
