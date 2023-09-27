@@ -39,7 +39,7 @@
     "ts-invariant": "^0.10.3"
   },
   "devDependencies": {
-    "@bjerk/eslint-config": "^4.0.0",
+    "@bjerk/eslint-config": "^6.0.0",
     "@cobraz/prettier": "^2.0.1",
     "@sanity/eslint-config-studio": "^3.0.0",
     "eslint": "^8.6.0",
