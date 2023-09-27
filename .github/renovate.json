@@ -1,14 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
-  "lockFileMaintenance": { "enabled": true, "automerge": true },
-  "rangeStrategy": "replace",
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["pnpm"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true,
-      "automergeSchedule": ["after 5am every weekday", "before 8pm every weekday"]
-    }
-  ]
+  "extends": ["github>bjerkio/workflows", "github>bjerkio/workflows:pnpm"]
 }
