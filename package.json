@@ -36,7 +36,7 @@
     "react-icons": "^4.7.1",
     "react-is": "^18.2.0",
     "sanity": "^3.8.3",
-    "styled-components": "^5.2.0",
+    "styled-components": "^6.0.0",
     "ts-invariant": "^0.10.3"
   },
   "devDependencies": {
