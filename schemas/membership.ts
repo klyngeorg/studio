@@ -27,6 +27,7 @@ export default defineType({
   type: 'document',
   title: 'Medlemskap',
   icon: HiIdentification,
+  description: 'Heisann der!',
   preview: {
     select: {
       givenName: 'member.givenName',
@@ -56,11 +57,15 @@ export default defineType({
   ],
   fields: [
     {
+      title: 'Medlemskapsår',
       name: 'year',
       type: 'reference',
       to: [{ type: 'membershipYear' }],
       validation: Rule => Rule.required(),
       initialValue: getCurrentYearRef,
+      options: {
+        disableNew: true,
+      }
     },
     {
       name: 'status',
