@@ -11,6 +11,10 @@ const getCurrentYearRef: InitialValueResolver<
     `*[_type == "membershipYear" && year == ${year}]`,
   );
 
+  if (!currentMembershipYear[0]) {
+    return undefined;
+  }
+
   return {
     // Required _type to tell the schema what fields to map
     _type: 'membershipYear',
