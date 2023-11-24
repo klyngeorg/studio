@@ -3,7 +3,7 @@ import { InitialValueResolver, defineType } from 'sanity';
 
 const getCurrentYearRef: InitialValueResolver<
   never,
-  { _type: string; _ref: string }
+  { _type: string; _ref: string } | undefined
 > = async (_, { getClient }) => {
   const year = new Date().getFullYear();
   const client = getClient({ apiVersion: '2021-03-25' });
