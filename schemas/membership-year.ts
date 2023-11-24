@@ -11,7 +11,7 @@ function isDevMode() {
 }
 
 const isDevelopment = process.env.NODE_ENV === 'development';
-const showStatus = (isDevelopment || isDevMode());
+const showStatus = !(isDevelopment || isDevMode());
 
 export default defineType({
   name: 'membershipYear',
