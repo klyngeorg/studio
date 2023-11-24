@@ -21,8 +21,8 @@ dependencies:
     specifier: ^2.29.3
     version: 2.29.3
   groqd-playground:
-    specifier: ^0.0.17
-    version: 0.0.17(@sanity/icons@2.4.1)(@sanity/ui@1.7.4)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(sanity@3.8.3)(styled-components@6.0.0)
+    specifier: ^0.0.18
+    version: 0.0.18(@sanity/icons@2.4.1)(@sanity/ui@1.7.4)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(sanity@3.8.3)(styled-components@6.0.0)
   norwegian-numbers:
     specifier: ^1.0.9
     version: 1.0.9
@@ -4887,8 +4887,8 @@ packages:
     resolution: {integrity: sha512-qJeuEgziddryH1ClsJvMoZM9aXNQbBViNZZrJwhHKr2wU8HGGM7uNWNVFglWXMX60MMaa2SClX3UohP76Ut68g==}
     dev: false
 
-  /groqd-playground@0.0.17(@sanity/icons@2.4.1)(@sanity/ui@1.7.4)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(sanity@3.8.3)(styled-components@6.0.0):
-    resolution: {integrity: sha512-+a4TBIs06yrUW2OqLzF5OIrUieiM0PzTNmF+djZFRGt1S2DaTziZ1gBhelKZWl6xaOjv7dqjIb+ZVVgVOD49sA==}
+  /groqd-playground@0.0.18(@sanity/icons@2.4.1)(@sanity/ui@1.7.4)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(sanity@3.8.3)(styled-components@6.0.0):
+    resolution: {integrity: sha512-+zAeJDvm8O1A9t5o5D01uSO62/KGLxG4EcGM3VVZAqy1wjJ8V/nXDo6P30A/uYbDmqxPpd0dPXX9rpbysVMsDw==}
     peerDependencies:
       '@sanity/icons': ^2.3.1
       '@sanity/ui': ^1.3.2
@@ -4901,21 +4901,21 @@ packages:
       '@sanity/icons': 2.4.1(react@18.2.0)
       '@sanity/ui': 1.7.4(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.0.0)
       '@uiw/react-split': 5.9.0(react-dom@18.2.0)(react@18.2.0)
-      groqd: 0.15.9
+      groqd: 0.15.10
       lodash.has: 4.5.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-is: 18.2.0
       sanity: 3.8.3(@types/node@20.4.5)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.0.0)
       styled-components: 6.0.0(react-dom@18.2.0)(react@18.2.0)
-      zod: 3.22.2
+      zod: 3.22.4
     dev: false
 
-  /groqd@0.15.9:
-    resolution: {integrity: sha512-kpAt7hRa8NO7+icWvLaT7Mraxh7bJp8d64Z49ae949FTBR7zd/IaVAlIpZkjuD1IA5P0vEw3a8ZUuarCwUEl1Q==}
+  /groqd@0.15.10:
+    resolution: {integrity: sha512-lwAeIszEqNB2ccxCsQCHO/cnAno4kQ/6bmwrjdC4LKKXrptHkDFe3VObFMrv+YrpErRu1AqLDGCyEhwD5nzRlA==}
     engines: {node: '>= 14'}
     dependencies:
-      zod: 3.21.4
+      zod: 3.22.4
     dev: false
 
   /gtoken@6.1.2:
@@ -7572,10 +7572,6 @@ packages:
       readable-stream: 3.6.2
     dev: false
 
-  /zod@3.21.4:
-    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
-    dev: false
-
-  /zod@3.22.2:
-    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: false
