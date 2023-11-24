@@ -7,7 +7,9 @@ import { schemaTypes } from './schemas';
 
 function isDevMode() {
   const devInSearch = window ? window.location.search.includes('dev') : false;
-  const devInLocalStorage = localStorage ? localStorage.getItem('devMode') === 'true' : false;
+  const devInLocalStorage = localStorage
+    ? localStorage.getItem('devMode') === 'true'
+    : false;
   const devModeEnabled = devInLocalStorage || devInSearch;
   return devModeEnabled;
 }

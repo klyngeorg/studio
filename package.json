@@ -27,6 +27,7 @@
     "@googleapis/calendar": "^9.0.0",
     "@sanity/client": "^6.0.0",
     "@sanity/vision": "^3.0.0",
+    "@simenandre/prettier": "^5.0.0",
     "date-fns": "^2.29.3",
     "groqd-playground": "^0.0.17",
     "norwegian-numbers": "^1.0.9",
@@ -39,10 +40,9 @@
     "ts-invariant": "^0.10.3"
   },
   "devDependencies": {
-    "@bjerk/eslint-config": "^6.0.0",
     "@cobraz/prettier": "^2.0.1",
     "@sanity/eslint-config-studio": "^3.0.0",
-    "eslint": "^8.6.0",
+    "eslint": "^8.46.0",
     "prettier": "^3.0.0",
     "ts-node": "^10.9.1",
     "tsx": "^3.12.7",
