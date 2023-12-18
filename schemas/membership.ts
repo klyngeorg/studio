@@ -65,7 +65,7 @@ export default defineType({
       initialValue: getCurrentYearRef,
       options: {
         disableNew: true,
-      }
+      },
     },
     {
       name: 'status',
