@@ -18,8 +18,8 @@ dependencies:
     specifier: ^5.0.0
     version: 5.0.0(prettier@3.0.0)
   date-fns:
-    specifier: ^2.29.3
-    version: 2.29.3
+    specifier: ^3.0.0
+    version: 3.0.0
   groqd-playground:
     specifier: ^0.0.17
     version: 0.0.17(@sanity/icons@2.4.1)(@sanity/ui@1.7.4)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(sanity@3.8.3)(styled-components@6.0.0)
@@ -3845,6 +3845,10 @@ packages:
   /date-fns@2.29.3:
     resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
+    dev: false
+
+  /date-fns@3.0.0:
+    resolution: {integrity: sha512-xjDz3rNN9jp+Lh3P/4MeY4E5HkaRnEnrJCcrdRZnKdn42gJlIe6hwrrwVXePRwVR2kh1UcMnz00erYBnHF8PFA==}
     dev: false
 
   /date-now@1.0.1:
