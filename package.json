@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@cobraz/prettier": "^2.0.1",
-    "@sanity/eslint-config-studio": "^3.0.0",
+    "@sanity/eslint-config-studio": "^4.0.0",
     "eslint": "^8.46.0",
     "prettier": "^3.0.0",
     "ts-node": "^10.9.1",
