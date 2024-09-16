@@ -28,7 +28,7 @@
     "@sanity/client": "^6.0.0",
     "@sanity/vision": "^3.0.0",
     "@simenandre/prettier": "^5.0.0",
-    "date-fns": "^2.29.3",
+    "date-fns": "^3.0.0",
     "groqd-playground": "^0.0.17",
     "norwegian-numbers": "^1.0.9",
     "react": "^18.2.0",
