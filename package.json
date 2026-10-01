@@ -29,7 +29,7 @@
     "@sanity/vision": "^3.0.0",
     "@simenandre/prettier": "^5.0.0",
     "date-fns": "^2.29.3",
-    "groqd-playground": "^0.0.17",
+    "groqd-playground": "^0.0.20",
     "norwegian-numbers": "^1.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
